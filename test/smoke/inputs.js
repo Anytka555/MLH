@@ -33,7 +33,20 @@ describe('Inputs', function () {
             expect(label).toEqual(true);
         });
     });
-    describe('Plaseholder are correct', function () {
+    describe('Placeholder`s name', function () {
+
+        it('TC-010 check name placeholder', () => {
+            const textPlaceHolder = $(sel.name).getProperty('placeholder');
+            expect(textPlaceHolder).toEqual(exp.namesFieldPlaceholder);
+        });
+        it('TC-026 check age placeholder', () => {
+            const agePlaceholder = $(sel.age).getProperty('placeholder');
+            expect(agePlaceholder).toEqual(exp.agesFieldPlaceholder);
+        });
+        it('TC-046 check "Type of the story" placeholder ', () => {
+            const storyPlaceholder = $(sel.storyFieldPlacehoder).getText();
+            expect(storyPlaceholder).toEqual(exp.storiesFieldPlaceholder);
+        });
 
  });
 

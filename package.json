@@ -18,5 +18,9 @@
     "@wdio/selenium-standalone-service": "^6.6.5",
     "@wdio/spec-reporter": "^6.6.8",
     "@wdio/sync": "^6.6.7"
+  },
+  "dependencies": {
+    "mocha": "^8.2.1",
+    "chai": "*"
   }
 }

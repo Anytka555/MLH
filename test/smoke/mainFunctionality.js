@@ -1,7 +1,9 @@
 const sel = require ('../../data/selectors.json');
 const data = require ('../../data/testData.json');
 const inputValues4 = require ('../../helpers/inputValues4');
+
 describe('Checking the main functionality', function () {
+
     describe('Happy path', function () {
         it('TC-021 Create button is clickable after 1-4 are filled in', function () {
             browser.url('');
